@@ -5,32 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TrimBin – Scriptable Workspace for Assistant Editors</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<!-- Navigation Bar (Sticky, Glassmorphism) -->
-	<nav class="nav">
-		<div class="container nav-content">
-			<div class="nav-logo">
-				<span class="logo-text">TrimBin</span>
-			</div>
+	<!-- Floating Glassy Header -->
+	<div class="header-container">
+		<!-- Navigation Bar (Sticky, Glassmorphism) -->
+		<nav class="nav">
+			<div class="container nav-content">
+				<div class="nav-logo">
+					<span class="logo-text">TrimBin</span>
+				</div>
 
-			<div class="nav-links">
-				<a href="#features" class="nav-link">Features</a>
-				<a href="#workflows" class="nav-link">Workflows</a>
-			</div>
+				<div class="nav-links">
+					<a href="#features" class="nav-link">Features</a>
+				</div>
 
-			<button class="btn btn-primary">Join Beta</button>
-		</div>
-	</nav>
+				<button class="btn btn-primary">Join Beta</button>
+			</div>
+		</nav>
+	</div>
 
 	<!-- Hero Section -->
 	<section class="hero">
 		<div class="container hero-content">
 			<div class="hero-left">
 				<h1 class="hero-title">The Scriptable Workspace for Assistant Editors.</h1>
-				<p class="hero-subtitle">Automate the boring parts of footage prep. Turn 4 hours of manual ingest, naming, and syncing into a single script cell.</p>
+				<p class="hero-subtitle">Automate the boring parts of footage prep. Leverage a scriptable environment that makes your ingest, naming, and syncing significantly more efficient through custom logic.</p>
 				<button class="btn btn-primary btn-large">Join the Beta</button>
 			</div>
 
@@ -63,35 +66,139 @@
 		</div>
 	</section>
 
-	<!-- Features Section (Three Blocks) -->
+	<!-- Features Section (Symmetric Bento Grid) -->
 	<section class="features" id="features">
-		<div class="container">
-			<div class="section-header">
-				<h2 class="section-title">Designed for High-Stakes Post-Production</h2>
-				<p class="section-tagline">The only scriptable workspace built to handle the chaos of professional film prep.</p>
+		<div class="container features-container">
+			<!-- Section Header -->
+			<div class="features-header">
+				<h2 class="features-title">Core Features</h2>
+				<p class="features-subtitle">TrimBin integrates every step of footage prep into one scriptable workspace.</p>
 			</div>
 
-			<div class="features-grid">
-				<!-- Block 1: Automate Repetitive Tasks -->
-				<div class="feature-block">
-					<h3 class="feature-header">Automate Repetitive Tasks</h3>
-					<p>Replace hours of manual clicking with custom Python scripts that transform your project's unique rules into a one-click automation.</p>
+			<!-- Bento Grid: Three Identical Cards -->
+			<div class="bento-grid">
+				<!-- Card 1: Automate Repetitive Tasks -->
+				<div class="bento-card">
+					<div class="card-floating-box">
+						<h3 class="card-header">Automate Repetitive Tasks</h3>
+						<p class="card-prompt">Our intuitive Python-based scripting environment empowers you to design custom automations that adapt to the specific logic of every individual project.</p>
+					</div>
 				</div>
 
-				<!-- Block 2: Fits Within Your Workflow -->
-				<div class="feature-block">
-					<h3 class="feature-header">Fits Within Your Workflow</h3>
-					<p>An endlessly configurable rig supporting all major media formats and industry-standard XML/EDL exports.</p>
+				<!-- Card 2: Fits Within Your Workflow -->
+				<div class="bento-card">
+					<div class="card-floating-box">
+						<h3 class="card-header">Fits Within Your Workflow</h3>
+						<p class="card-prompt">Built to be permissive from the ground up, this endlessly configurable rig supports all major media formats and industry-standard exports to your preferred NLE.</p>
+					</div>
 				</div>
 
-				<!-- Block 3: Cutting Edge Technology -->
-				<div class="feature-block">
-					<h3 class="feature-header">Cutting Edge Technology</h3>
-					<p>Harness computer vision and speaker-identifying transcription to astronomically accelerate logging and assembly.</p>
+				<!-- Card 3: Cutting Edge Technology -->
+				<div class="bento-card">
+					<div class="card-floating-box">
+						<h3 class="card-header">Cutting Edge Technology</h3>
+						<p class="card-prompt">Harness advanced computer vision and speaker-identifying transcription to astronomically accelerate the logging and rough assembly of high-volume footage.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- CTA Section -->
+	<section class="cta">
+		<div class="container cta-content">
+			<div class="cta-card">
+				<p class="cta-quote">"Finally, a tool that doesn't just automate for me, but lets me build the exact automation my specific workflow requires."</p>
+				<p class="cta-attribution">— Assistant Editor, UC Berkeley Film</p>
+			</div>
+			<button class="btn btn-cta btn-large">Join the Beta</button>
+		</div>
+	</section>
+
+<!-- Beta Signup Modal -->
+	<div id="modal-overlay" class="modal-overlay"></div>
+	<div id="beta-modal" class="beta-modal">
+		<h2 class="modal-headline">Request Beta Access</h2>
+		<p class="modal-subtext">TrimBin is currently in private beta for film professionals. Registrants will receive a brief technical walkthrough and early-access pricing.</p>
+		
+		<div class="modal-benefits">
+			<div class="benefit-item">
+				<span class="benefit-icon">✓</span>
+				<p>Standard 30-day evaluation period.</p>
+			</div>
+			<div class="benefit-item">
+				<span class="benefit-icon">✓</span>
+				<p>Direct input on custom feature development.</p>
+			</div>
+			<div class="benefit-item">
+				<span class="benefit-icon">✓</span>
+				<p>Permanent early-adopter rate.</p>
+			</div>
+		</div>
+
+		<form id="beta-form" class="modal-form">
+			<input type="email" class="form-input" placeholder="Email Address" required>
+			<button type="submit" class="btn btn-modal">Join the Waitlist</button>
+		</form>
+	</div>
+
+	<script>
+		// Get modal elements
+		const modalOverlay = document.getElementById('modal-overlay');
+		const betaModal = document.getElementById('beta-modal');
+		const betaForm = document.getElementById('beta-form');
+		const joinBetaButtons = document.querySelectorAll('.btn-primary, .btn-cta');
+
+		// Open modal when any "Join Beta" button is clicked
+		joinBetaButtons.forEach(button => {
+			if (button.textContent.trim() === 'Join Beta' || button.textContent.trim() === 'Join the Beta') {
+				button.addEventListener('click', (e) => {
+					e.preventDefault();
+					openModal();
+				});
+			}
+		});
+
+		// Close modal when overlay is clicked
+		modalOverlay.addEventListener('click', closeModal);
+
+		// Prevent closing when clicking inside modal
+		betaModal.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+
+		// Handle form submission
+		betaForm.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const email = betaForm.querySelector('.form-input').value;
+			console.log('Beta signup email:', email);
+			// Here you would typically send the email to your backend
+			// For now, we'll just close the modal and show a success message
+			alert('Thanks for signing up! We\'ll be in touch soon.');
+			closeModal();
+			betaForm.reset();
+		});
+
+		// Modal functions
+		function openModal() {
+			modalOverlay.classList.add('active');
+			betaModal.classList.add('active');
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeModal() {
+			modalOverlay.classList.remove('active');
+			betaModal.classList.remove('active');
+			document.body.style.overflow = 'auto';
+		}
+
+		// Close modal on Escape key
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				closeModal();
+			}
+		});
+	</script>
 
 </body>
 </html>
