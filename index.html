@@ -3,29 +3,95 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trimbin</title>
+	<title>TrimBin – Scriptable Workspace for Assistant Editors</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1>Trimbin Studio</h1>
-		<p class="tagline">Your Assistant Editor's Assistant Editor</p>
-	</header>
 
-	<main>
-		<section>
-			<h2>More Coming Soon</h2>
-			<p>Stay Tuned</p>
-		</section>
-	</main>
+	<!-- Navigation Bar (Sticky, Glassmorphism) -->
+	<nav class="nav">
+		<div class="container nav-content">
+			<div class="nav-logo">
+				<span class="logo-text">TrimBin</span>
+			</div>
 
-	<footer>
-		<small>© <span id="year"></span> Trimbin</small>
-	</footer>
+			<div class="nav-links">
+				<a href="#features" class="nav-link">Features</a>
+				<a href="#workflows" class="nav-link">Workflows</a>
+			</div>
 
-	<script>
-		// Set the current year in the footer.
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
+			<button class="btn btn-primary">Join Beta</button>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="container hero-content">
+			<div class="hero-left">
+				<h1 class="hero-title">The Scriptable Workspace for Assistant Editors.</h1>
+				<p class="hero-subtitle">Automate the boring parts of footage prep. Turn 4 hours of manual ingest, naming, and syncing into a single script cell.</p>
+				<button class="btn btn-primary btn-large">Join the Beta</button>
+			</div>
+
+			<div class="hero-right">
+				<div class="code-window">
+					<div class="code-header">
+						<span class="code-title">notebook_cell_01.py</span>
+						<div class="code-controls">
+							<span class="code-dot red"></span>
+							<span class="code-dot yellow"></span>
+							<span class="code-dot green"></span>
+						</div>
+					</div>
+					<div class="code-body">
+						<div class="code-line">
+							<span class="line-number">1</span>
+							<span class="code-text"><span class="keyword">import</span> <span class="module">trimbin</span></span>
+						</div>
+						<div class="code-line">
+							<span class="line-number">2</span>
+							<span class="code-text"></span>
+						</div>
+						<div class="code-line">
+							<span class="line-number">3</span>
+							<span class="code-text"><span class="function">trimbin</span>.<span class="method">sync_and_tag</span>(<span class="param">day</span>=<span class="string">'01'</span>, <span class="param">mode</span>=<span class="string">'ai_assisted'</span>)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features Section (Three Blocks) -->
+	<section class="features" id="features">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Designed for High-Stakes Post-Production</h2>
+				<p class="section-tagline">The only scriptable workspace built to handle the chaos of professional film prep.</p>
+			</div>
+
+			<div class="features-grid">
+				<!-- Block 1: Automate Repetitive Tasks -->
+				<div class="feature-block">
+					<h3 class="feature-header">Automate Repetitive Tasks</h3>
+					<p>Replace hours of manual clicking with custom Python scripts that transform your project's unique rules into a one-click automation.</p>
+				</div>
+
+				<!-- Block 2: Fits Within Your Workflow -->
+				<div class="feature-block">
+					<h3 class="feature-header">Fits Within Your Workflow</h3>
+					<p>An endlessly configurable rig supporting all major media formats and industry-standard XML/EDL exports.</p>
+				</div>
+
+				<!-- Block 3: Cutting Edge Technology -->
+				<div class="feature-block">
+					<h3 class="feature-header">Cutting Edge Technology</h3>
+					<p>Harness computer vision and speaker-identifying transcription to astronomically accelerate logging and assembly.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 </html>
