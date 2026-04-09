@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 648.1 666.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #45585e;
+      }
+
+      .cls-2 {
+        fill: #cc2a25;
+      }
+
+      .cls-3 {
+        fill: #0e1d22;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #45585e;
+        stroke-miterlimit: 10;
+        stroke-width: 45px;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="M519.62,594.18h-109.65l-85.92,46.55-87.56-46.55h-108.43c-44.52,0-80.6-35.4-80.6-79.06V11.46h554.81v501.66c0,44.77-37,81.07-82.65,81.07Z"/>
+  <rect class="cls-2" width="648.1" height="48.28"/>
+  <path class="cls-4" d="M582.49,93.29v417.98c0,43.73-34.27,79.18-76.55,79.18h-97l-86.77,50.28-90.11-50.28h-88.66c-42.28,0-76.55-35.45-76.55-79.18V93.29"/>
+  <polyline class="cls-1" points="47.46 93.29 47.46 140.75 0 140.75 0 93.29 47.46 93.29"/>
+  <rect class="cls-1" x="601.45" y="93.29" width="46.64" height="46.64"/>
+  <rect class="cls-2" x="423.2" y="93.29" width="113.52" height="442.91"/>
+  <rect class="cls-2" x="112.92" y="93.29" width="115.3" height="442.91"/>
+  <rect class="cls-2" x="268.95" y="93.29" width="113.52" height="442.91"/>
+</svg>
